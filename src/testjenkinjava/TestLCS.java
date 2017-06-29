@@ -556,17 +556,19 @@ public class TestLCS extends TestCase {
         }
         return a[m][n];
     }
-    public static void main(String[] args) {
-        junit.textui.TestRunner.run(new TestSuite(TestLCS.class));
+    public static void main(String[] args) throws Exception{
+        //junit.textui.TestRunner.run(new TestSuite(TestLCS.class));
         
         Result result = JUnitCore.runClasses(TestLCS.class);
-
+        
         for (Failure failure : result.getFailures()) {
             System.out.println(failure.toString());
             
         }
-
         System.out.println(result.wasSuccessful());
+        if (!result.wasSuccessful()) {
+            throw new Exception("FAIL");
+        }
     
     }
 }
