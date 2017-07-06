@@ -9,7 +9,7 @@ public class TestLCS extends TestCase {
 
     public TestLCS(String name) {
         super(name);
-    }
+    
 
     public void test0() {
          TestJenkinJava LCS = new TestJenkinJava("lagdykfbpculacejdrsuuxnmnzwvdkzlqgiqbqavtqghrdseflbgfzbm", "sczjuskwpgsaoqbr");
