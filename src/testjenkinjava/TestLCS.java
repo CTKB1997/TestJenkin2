@@ -13,7 +13,7 @@ public class TestLCS extends TestCase {
 
     public void test0() {
          TestJenkinJava LCS = new TestJenkinJava("lagdykfbpculacejdrsuuxnmnzwvdkzlqgiqbqavtqghrdseflbgfzbm", "sczjuskwpgsaoqbr");
-         assertEquals(8, LCS.getLCS())
+         assertEquals(8, LCS.getLCS());
     }
 
     public void test1() {
